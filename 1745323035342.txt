@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Tout Genre - Votre partenaire polyvalent</title>
+    <style>
+        /* Styles CSS de base */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #34495e;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+        }
+        nav a:hover {
+            background: #2c3e50;
+            border-radius: 4px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .service-card {
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Services Tout Genre</h1>
+        <p>Votre solution unique pour tous vos besoins</p>
+    </header>
+    
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="container" id="accueil">
+        <section id="hero">
+            <h2>Des services professionnels adaptés à vos besoins</h2>
+            <p>Que vous soyez un particulier ou une entreprise, nous proposons une gamme complète de services pour répondre à toutes vos demandes.</p>
+            <a href="#contact" class="btn">Contactez-nous</a>
+        </section>
+        
+        <section id="services">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Ménage et Nettoyage</h3>
+                    <p>Services de nettoyage résidentiel et commercial, entretien régulier ou ponctuel.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Jardinage et Entretien Extérieur</h3>
+                    <p>Tonte, taille de haies, entretien des espaces verts et aménagement paysager.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Bricolage et Petites Réparations</h3>
+                    <p>Montage de meubles, réparations diverses, installations et dépannages.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Déménagement et Aide au Transport</h3>
+                    <p>Service complet de déménagement ou location de camion avec chauffeur.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Services Administratifs</h3>
+                    <p>Aide à la rédaction, saisie informatique, organisation de documents.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Autres Services Sur Mesure</h3>
+                    <p>Nous adaptons nos services à vos besoins spécifiques. Demandez-nous !</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="apropos">
+            <h2>À Propos de Nous</h2>
+            <p>Services Tout Genre est une entreprise locale créée en [année de création] avec pour mission de simplifier la vie de nos clients en proposant des services polyvalents de qualité.</p>
+            <p>Notre équipe est composée de professionnels qualifiés dans divers domaines, tous animés par le souci du travail bien fait et la satisfaction client.</p>
+            <h3>Pourquoi nous choisir ?</h3>
+            <ul>
+                <li>Polyvalence : un seul contact pour de multiples services</li>
+                <li>Flexibilité : adaptés à vos horaires et besoins</li>
+                <li>Professionnalisme : des intervenants qualifiés et sérieux</li>
+                <li>Transparence : tarifs clairs sans surprise</li>
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <h2>Contactez-Nous</h2>
+            <p>Pour toute demande de devis ou information, n'hésitez pas à nous contacter :</p>
+            <form>
+                <div>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone">
+                </div>
+                <div>
+                    <label for="service">Service demandé :</label>
+                    <select id="service" name="service">
+                        <option value="">-- Sélectionnez un service --</option>
+                        <option value="nettoyage">Ménage/Nettoyage</option>
+                        <option value="jardinage">Jardinage</option>
+                        <option value="bricolage">Bricolage</option>
+                        <option value="demenagement">Déménagement</option>
+                        <option value="administratif">Services administratifs</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer la demande</button>
+            </form>
+            
+            <div style="margin-top: 2rem;">
+                <h3>Coordonnées</h3>
+                <p><strong>Téléphone :</strong> [Votre numéro de téléphone]</p>
+                <p><strong>Email :</strong> contact@servicestoutgenre.com</p>
+                <p><strong>Adresse :</strong> [Votre adresse physique si applicable]</p>
+                <p><strong>Horaires :</strong> Du lundi au samedi, 8h-19h</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Services Tout Genre - Tous droits réservés</p>
+        <p>Suivez-nous sur [liens vers réseaux sociaux]</p>
+    </footer>
+</body>
+</html>
